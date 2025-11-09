@@ -15,19 +15,22 @@
         <h1>Welcome to AlgoRhyme, the AI Poem Generator!</h1>
       </header>
       <main>
-        <form id="poem-generator-form">
-          <input
-            class="instructions"
-            type="text"
-            placeholder="Enter the topic of your poem"
-            autofocus
-            required
-            autocomplete="off"
-            id="user-instructions"
-          />
-          <input type="submit" class="submitButton" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="formContainer">
+          <form id="poem-generator-form">
+            <input
+              class="instructions"
+              type="text"
+              placeholder="Enter the topic of your poem"
+              autofocus
+              required
+              autocomplete="off"
+              id="user-instructions"
+            />
+            <input type="submit" class="submitButton" />
+          </form>
+          <small class="examples">i.e. nature, tech, history</small>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
       <footer>
         This AI project is coded by
